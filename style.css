@@ -60,3 +60,23 @@
     right: 5%;
     top: 4%;
 }
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .container_input {
+        left: 22%;
+    }
+
+    .container_result {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .container_input {
+        left: 15%;
+    }
+
+    .container_result {
+        margin-left: 15%;
+    }
+}
