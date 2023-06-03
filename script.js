@@ -38,7 +38,7 @@
 
 		node1.setAttribute(
 			'style',
-			'width:200px; height:200px; font-size:26px; padding:19px; margin-top:7px; overflow:hidden; box-shadow:0px 10px 24px 0px rgba(0,0,0,0.75)'
+			'width:75px; height:75px; font-size:16px; padding:5px; margin-top:7px; overflow:hidden; box-shadow:0px 10px 24px 0px rgba(0,0,0,0.75)'
 		);
 
 		node1.style.margin = margin();
