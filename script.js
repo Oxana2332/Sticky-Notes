@@ -32,20 +32,17 @@
 	function createNote() {
 		let noteText = document.querySelector('#note_text').value;
 		let node0 = document.createElement('div');
-		let node1 = document.createElement('h1');
+		let nodeNew = document.createElement('h1');
 
-		node1.innerHTML = noteText;
+		nodeNew.innerHTML = noteText;
 
-		node1.setAttribute(
-			'style',
-			'width:75px; height:75px; font-size:16px; padding:5px; margin-top:7px; overflow:hidden; box-shadow:0px 10px 24px 0px rgba(0,0,0,0.75)'
-		);
+		nodeNew.setAttribute('class', 'nodeNew');
 
-		node1.style.margin = margin();
-		node1.style.transform = rotate();
-		node1.style.background = color();
+		nodeNew.style.margin = margin();
+		nodeNew.style.transform = rotate();
+		nodeNew.style.background = color();
 
-		node0.appendChild(node1);
+		node0.appendChild(nodeNew);
 
 		container_result.insertAdjacentElement('beforeend', node0);
 
