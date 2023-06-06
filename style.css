@@ -7,18 +7,17 @@
     background-color: #c68c53a8;
 }
 
-.main_container {
+.note {
     font-family: "Architects Daughter";
-    font-size: 24px;
     width: 95%;
     margin: auto;
 }
 
-.container_button {
+.note_button {
     margin-left: 5%;
 }
 
-.container_result {
+.note_result {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -26,14 +25,15 @@
     margin-left: 3%;
 }
 
-.container_input {
+.note_input {
     display: none;
     position: absolute;
+    font-size: 24px;
     top: 26%;
     left: 15%;
 }
 
-#note_text {
+#note_input__text {
     box-shadow: 10px 10px 24px 0px rgba(0, 0, 0, 0.75);
     outline: none;
     border: none;
@@ -52,31 +52,31 @@
     box-shadow: 0px 10px 24px 0px rgba(0, 0, 0, 0.75);
 }
 
-#check_icon,
-#x_icon {
+#note_input__check,
+#note_input__x {
     color: grey;
     width: 1em;
     height: 1em;
 }
 
-#check_icon {
+#note_input__check {
     position: absolute;
     right: 17%;
     top: 4%;
 }
 
-#x_icon {
+#note_input__x {
     position: absolute;
     right: 5%;
     top: 4%;
 }
 
 @media screen and (min-width: 375px) and (max-width: 767px) {
-    .container_input {
+    .note_input {
         left: 22%;
     }
 
-    .container_result {
+    .note_result {
         margin-left: 5%;
     }
 
@@ -90,11 +90,11 @@
 }
 
 @media screen and (min-width: 768px) {
-    .container_input {
+    .note_input {
         left: 40%;
     }
 
-    .container_result {
+    .note_result {
         margin-left: 5%;
     }
 

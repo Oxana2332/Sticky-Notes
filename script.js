@@ -1,10 +1,10 @@
 'use strict';
 
 (function () {
-	let container_result = document.querySelector('.container_result');
+	let container_result = document.querySelector('.note_result');
 	let start_button = document.querySelector('.btn');
-	let checkIcon = document.querySelector('#check_icon');
-	let xIcon = document.querySelector('#x_icon');
+	let checkIcon = document.querySelector('#note_input__check');
+	let xIcon = document.querySelector('#note_input__x');
 	let i = 0;
 
 	start_button.addEventListener('click', function () {
@@ -20,9 +20,9 @@
 	});
 
 	function typeNote() {
-		let container_input = document.querySelector('.container_input');
+		let container_input = document.querySelector('.note_input');
 
-		if (container_input.style.display == 'none') {
+		if (container_input.style.display === 'none') {
 			container_input.style.display = 'block';
 		} else {
 			container_input.style.display = 'none';
@@ -30,7 +30,7 @@
 	}
 
 	function createNote() {
-		let noteText = document.querySelector('#note_text').value;
+		let noteText = document.querySelector('#note_input__text').value;
 		let node0 = document.createElement('div');
 		let nodeNew = document.createElement('h1');
 
@@ -58,7 +58,7 @@
 			node0.remove();
 		});
 
-		document.querySelector('#note_text').value = '';
+		document.querySelector('#note_input__text').value = '';
 	}
 
 	function margin() {
