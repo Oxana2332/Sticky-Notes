@@ -43,8 +43,8 @@
 }
 
 .nodeNew {
-    width: 85px;
-    height: 85px;
+    width: 83px;
+    height: 83px;
     font-size: 12px;
     padding: 5px;
     margin-top: 7px;
@@ -81,8 +81,6 @@
     }
 
     .nodeNew {
-        width: 100px;
-        height: 100px;
         font-size: 12px;
         padding: 10px;
         margin-top: 8px;
